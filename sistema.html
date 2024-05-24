@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema | Pen's</title>
+    <link rel="stylesheet" href="sistema.css">
+    <link rel="shortcut icon" type="image/png" href="img/mini-logo.png">
+    <style>
+        /* Adicionando estilos para o menu de categorias */
+        .dropdown {
+            display: inline-block;
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #013440;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #017c8a;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="img/Pen-Logo-InSite.png" alt="Logo" class="logo">
+        <h1>Sistema escolar Pen's</h1>
+    </header>
+
+    <nav>
+        <a href="sistema.html">Home</a>
+        <div class="dropdown">
+            <a href="biblioteca.html">Livros Disponíveis</a>
+            <div class="dropdown-content">
+            <a href="biblioteca-ficçao.html">Ficção</a>
+                <a href="biblioteca-historia.html">História</a>
+                <a href="biblioteca-drama.html">Drama</a>
+                <a href="biblioteca-romance.html">Românce</a>
+                <a href="biblioteca-terror.html">Terror</a>
+                <a href="biblioteca-suspense.html">Suspense</a>
+            </div>
+        </div>
+        <a href="reservas.html">Reservas</a>
+        <a href="historico.html">Histórico</a>
+        <a href="index.html">Sair</a>
+    </nav>
+
+    <div class="container">
+        <h2>Bem-vindo ao Sistema Pen</h2>
+        <p>Aqui você pode verificar a disponibilidade de livros, fazer reservas, ver histórico e deslogar da sua conta.</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Pen's</p>
+    </footer>
+</body>
+</html>

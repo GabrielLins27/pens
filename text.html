@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .options {
+            display: none;
+            position: absolute;
+            background-color: white;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://google.com/">google</a>
+    <div class="options">
+        <a href="https://www.google.com/maps">Maps</a>
+        <a href="https://mail.google.com/">Gmail</a>
+        <a href="https://www.google.com/drive/">Drive</a>
+    </div>
+    <script>
+        var optionsTimeout;
+
+        document.querySelector('a').addEventListener('mouseover', function() {
+            clearTimeout(optionsTimeout);
+            document.querySelector('.options').style.display = 'block';
+        });
+
+        document.querySelector('.options').addEventListener('mouseleave', function() {
+            optionsTimeout = setTimeout(function() {
+                document.querySelector('.options').style.display = 'none';
+            }, 500); // Ajuste o tempo aqui (em milissegundos)
+        });
+    </script>
+</body>
+</html>

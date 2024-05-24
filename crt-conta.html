@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crie uma conta | Pen's</title>
+  <link rel="stylesheet" href="crt-conta.css">
+  <link rel="shortcut icon" type="image/png" href="img/mini-logo.png">
+</head>
+<body>
+  <a href="index.html"><button class="back-btn" class="btn">Voltar</button></a>
+  <a href="login.php"><button class="log-btn" class="btn">Já tenho uma conta</button></a>
+  <div class="container">
+    <h2>Crie uma conta!</h2>
+    <form action="sistema.html" method="post">
+      <label for="nome">Nome</label>
+      <input type="text" id="nome" name="nome" required>
+      <label for="email">E-mail:</label>
+      <input type="text" id="email" name="email" required>
+      <label for="password">Senha:</label>
+      <input type="password" id="password" name="senha" required>
+      <label for="year">Serie:</label>
+      <select id="year" name="serie" required>
+        <option value="">Selecione o ano</option>
+        <option value="1">1° Ano</option>
+        <option value="2">2° Ano</option>
+        <option value="3">3° Ano</option>
+      </select>
+      <label for="class">Sala:</label>
+      <input type="text" id="class" name="sala" required>
+      <input type="submit" name="submit">
+    </form>
+  </div>
+</body>
+</html>
